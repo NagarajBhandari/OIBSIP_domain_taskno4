@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Advanced Weather App — About & Help</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <header>
+    <h1>Advanced Weather App</h1>
+    <p>Desktop GUI built with Python (Tkinter)</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>City search & “Use My Location” (IP-based)</li>
+        <li>Current conditions with icons</li>
+        <li>Hourly (next 24h) & Daily (5 days) forecasts</li>
+        <li>Unit toggle: Celsius / Fahrenheit</li>
+        <li>Robust error handling</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How to Run</h2>
+      <ol>
+        <li>Create API key at OpenWeatherMap.</li>
+        <li>Put it in <code>config.py</code> → <code>API_KEY</code>.</li>
+        <li>Install deps: <code>pip install -r requirements.txt</code></li>
+        <li>Run: <code>python app.py</code></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <small>© Your Name — MIT License | <a href="/">Home</a></small>
+  </footer>
+</body>
+</html>
